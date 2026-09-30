@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#141A33">
+<title>数秘術とライフパスナンバー｜ひとやすみタロット</title>
+<meta name="description" content="数秘術とライフパスナンバー。生年月日からライフパスナンバーを出す方法と、12の数の意味。このページでそのまま計算できます。">
+<link rel="canonical" href="https://it-engineer-k.github.io/TalotWeb/guide/numerology.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ひとやすみタロット">
+<meta property="og:title" content="数秘術とライフパスナンバー｜ひとやすみタロット">
+<meta property="og:description" content="数秘術とライフパスナンバー。生年月日からライフパスナンバーを出す方法と、12の数の意味。このページでそのまま計算できます。">
+<meta property="og:url" content="https://it-engineer-k.github.io/TalotWeb/guide/numerology.html">
+<meta property="og:image" content="https://it-engineer-k.github.io/TalotWeb/images/og.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../images/icon.svg" type="image/svg+xml">
+<link rel="icon" href="../images/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="../images/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "数秘術とライフパスナンバー", "description": "生年月日からライフパスナンバーを出す方法と、12の数の意味。このページでそのまま計算できます。", "inLanguage": "ja", "author": {"@type": "Person", "name": "船原滉樹"}, "publisher": {"@type": "Organization", "name": "ひとやすみタロット"}, "datePublished": "2026-09-30", "dateModified": "2026-09-30"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://it-engineer-k.github.io/TalotWeb/"}, {"@type": "ListItem", "position": 2, "name": "読み物", "item": "https://it-engineer-k.github.io/TalotWeb/guide/"}, {"@type": "ListItem", "position": 3, "name": "数秘術とライフパスナンバー"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img src="../images/icon.svg" alt="" width="40" height="40">ひとやすみタロット</a>
+    <nav class="nav" aria-label="メインメニュー"><a href="../index.html">トップ</a><a href="../features.html">特長</a><a href="../howto.html">使い方</a><a href="../cards/index.html">カードの意味</a><a href="../guide/index.html" aria-current="page">読み物</a><a href="../faq.html">よくある質問</a></nav>
+  </div>
+</header>
+<nav class="crumbs wrap" aria-label="パンくずリスト"><a href="../index.html">トップ</a><span aria-hidden="true">›</span><a href="../guide/index.html">読み物</a><span aria-hidden="true">›</span><span>数秘術とライフパスナンバー</span></nav>
+<main>
+
+<article class="narrow article" style="padding-top:10px;padding-bottom:30px">
+  <p class="eyebrow">数秘術</p>
+  <h1>数秘術とライフパスナンバー</h1>
+  <p class="muted">生年月日からライフパスナンバーを出す方法と、12の数の意味。このページでそのまま計算できます。</p>
+  
+<nav class="toc panel"><b>目次</b><ol><li><a href="#what">数秘術とは</a></li><li><a href="#calc">ライフパスナンバーを計算する</a></li><li><a href="#how">出し方（手計算）</a></li><li><a href="#list">12の数の意味</a></li><li><a href="#day">パーソナルデイ</a></li><li><a href="#note">知っておきたいこと</a></li></ol></nav>
+<h2 id="what">数秘術とは</h2>
+<p>数秘術は、名前や生年月日から数を出し、その人の性格や、これからの流れを読む占いです。「すべてのものは数で表せる」という古代ギリシャのピタゴラス学派の考え方が、思想的な源とされています。今よく使われている「生年月日の数字を足していく」方法は、20世紀以降に広まったものです。</p>
+
+<h2 id="calc">ライフパスナンバーを計算する</h2>
+<form class="tool panel" id="np-form">
+  <label>生年月日を入れてください</label>
+  <div class="row">
+    <input name="y" type="number" inputmode="numeric" min="1900" max="2026" placeholder="1985" aria-label="年" style="width:110px"> 年
+    <input name="m" type="number" inputmode="numeric" min="1" max="12" placeholder="7" aria-label="月" style="width:80px"> 月
+    <input name="d" type="number" inputmode="numeric" min="1" max="31" placeholder="23" aria-label="日" style="width:80px"> 日
+  </div>
+  <p style="margin:16px 0 0"><button class="btn btn-primary" type="submit">計算する</button></p>
+  <div class="result" id="np-result" aria-live="polite"></div>
+  <p class="muted small" style="margin:14px 0 0">入力した生年月日は、このページの中だけで計算に使い、どこにも送信しません。</p>
+</form>
+<script type="application/json" id="np-texts">{"lifePath": {"1": "自分から道を切り開く、行動力のある人。始めることが得意です。", "2": "目の前の相手の気持ちを察して、そっと寄り添える人です。", "3": "明るさと言葉の力で、周りを楽しくする人です。", "4": "こつこつ積み上げる、誠実で安定感のある人です。", "5": "変化と自由を楽しむ、好奇心いっぱいの人です。", "6": "家族や周りの人を守り、大切に育てる愛情深い人です。", "7": "物事を深く考え、本質を見抜く落ち着いた人です。", "8": "目標に向かって力強く進む、実行力のある人です。", "9": "広い心で人を受け入れ、許すことのできる思いやりのある人です。", "11": "2の寄り添う力に、鋭い直感とひらめきが加わった人です。", "22": "4の着実さに、大きな夢を形にする力が加わった人です。", "33": "6の愛情深さが、人を癒やし包み込む力にまで広がった人です。"}, "day": {"1": "新しいことを始めるのに向いた日です。", "2": "人と協力すると、うまくいきやすい日です。", "3": "楽しむことや、気持ちを表現することが幸運の鍵になる日です。", "4": "地道な作業がはかどる日です。", "5": "変化や思いがけない出来事を楽しめる日です。", "6": "身近な人を大切にすると、心が満たされる日です。", "7": "一人で考えたり学んだりするのに向いた日です。", "8": "目標に向けて、しっかり結果を出せる日です。", "9": "区切りをつけたり、手放したりするのに向いた日です。"}}</script>
+
+<h2 id="how">出し方（手計算）</h2>
+<p>生年月日の数字を、1桁ずつすべて足します。2桁になったら、1桁になるまで足し続けます。ただし、途中で <b>11・22・33</b> になったときは、それ以上足さずに「マスターナンバー」とします。</p>
+<div class="panel">
+<p><b>例：1985年7月23日生まれ</b></p>
+<p>1 + 9 + 8 + 5 + 7 + 2 + 3 = 35</p>
+<p>3 + 5 = <b>8</b> → ライフパスナンバーは 8</p>
+</div>
+<p class="muted small">年・月・日をそれぞれ先に1桁にしてから足す方法など、計算のしかたには流派があります。方法によって、マスターナンバーが出るかどうかが変わることがあります。このページとアプリは、すべての数字を1桁ずつ足す方法を使っています。</p>
+
+<h2 id="list">12の数の意味</h2>
+<p>アプリ「ひとやすみタロット」で使っている、ライフパスナンバーのひとことです。</p>
+<div class="table-wrap"><table><tr><th>1</th><td>自分から道を切り開く、行動力のある人。始めることが得意です。</td></tr><tr><th>2</th><td>目の前の相手の気持ちを察して、そっと寄り添える人です。</td></tr><tr><th>3</th><td>明るさと言葉の力で、周りを楽しくする人です。</td></tr><tr><th>4</th><td>こつこつ積み上げる、誠実で安定感のある人です。</td></tr><tr><th>5</th><td>変化と自由を楽しむ、好奇心いっぱいの人です。</td></tr><tr><th>6</th><td>家族や周りの人を守り、大切に育てる愛情深い人です。</td></tr><tr><th>7</th><td>物事を深く考え、本質を見抜く落ち着いた人です。</td></tr><tr><th>8</th><td>目標に向かって力強く進む、実行力のある人です。</td></tr><tr><th>9</th><td>広い心で人を受け入れ、許すことのできる思いやりのある人です。</td></tr><tr><th>11</th><td>2の寄り添う力に、鋭い直感とひらめきが加わった人です。</td></tr><tr><th>22</th><td>4の着実さに、大きな夢を形にする力が加わった人です。</td></tr><tr><th>33</th><td>6の愛情深さが、人を癒やし包み込む力にまで広がった人です。</td></tr></table></div>
+
+<h2 id="day">パーソナルデイ</h2>
+<p>「誕生月 + 誕生日 + 今日の年月日」の数字をすべて足して1桁にしたものを、パーソナルデイと呼びます。その日をどう過ごすかのヒントとして使います。上の計算では、今日のパーソナルデイも一緒に出ます。</p>
+
+<h2 id="note">知っておきたいこと</h2>
+<ul>
+  <li>数秘術は占いであり、性格や未来を科学的に言い当てるものではありません。</li>
+  <li>性格の説明が「当たっている」と感じやすいのは、誰にでも当てはまる言葉を自分のことだと受け取りやすい、人の心のしくみも関係しています（<a href="fortune-and-mind.html">占いとの上手な付き合い方</a>）。</li>
+  <li>「自分はこういう数だから」と決めつけず、自分をふり返るきっかけとして使うのがおすすめです。</li>
+</ul>
+
+  <h2 id="refs">参考文献</h2><ol class="small"><li>Encyclopaedia Britannica &quot;Numerology&quot; <a href="https://www.britannica.com/topic/numerology" target="_blank" rel="noopener">リンク</a></li><li>Forer, B. R. (1949) The fallacy of personal validation: a classroom demonstration of gullibility. Journal of Abnormal and Social Psychology, 44(1), 118–123 <a href="https://doi.org/10.1037/h0059240" target="_blank" rel="noopener">リンク</a></li></ol>
+  <h2>あわせて読みたい</h2><ul><li><a href="fortune-and-mind.html">占いとの上手な付き合い方</a></li><li><a href="moon.html">月齢と月の満ち欠け</a></li><li><a href="shichu-suimei.html">四柱推命のきほん</a></li></ul>
+  <p class="muted small" style="margin-top:28px">占いの結果は、日々の参考としてお使いください。健康・お金・法律などの大切な判断は、専門家にご相談ください。</p>
+</article>
+<section class="cta-band"><div class="narrow"><div class="panel">
+  <h2>学んだことを、アプリで試してみませんか</h2>
+  <p class="muted">質問に答えるだけで、カードの読み方がわかる文章が出ます。</p>
+  <div class="btn-row"><a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.konju.talot" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.8v16.4c0 .8.9 1.3 1.6.9l13-8.2c.6-.4.6-1.3 0-1.7l-13-8.2C6.9 2.5 6 3 6 3.8z"/></svg>Google Play で入手</a></div>
+  <p class="btn-note">Android 対応・会員登録なし</p>
+</div></div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="../index.html" style="font-size:18px"><img src="../images/icon.svg" alt="" width="34" height="34">ひとやすみタロット</a>
+        <p class="small" style="margin-top:10px">がんばる毎日に、ひとやすみの一枚を。<br>Android 向けタロット占いアプリです。</p>
+      </div>
+      <div>
+        <h2>アプリについて</h2>
+        <ul>
+          <li><a href="../features.html">特長</a></li>
+          <li><a href="../howto.html">使い方</a></li>
+          <li><a href="../faq.html">よくある質問</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.konju.talot" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>読み物</h2>
+        <ul>
+          <li><a href="../cards/index.html">タロットカードの意味</a></li>
+          <li><a href="../guide/tarot-basics.html">タロットのきほん</a></li>
+          <li><a href="../guide/numerology.html">ライフパスナンバー</a></li>
+          <li><a href="../guide/moon.html">今日の月と過ごし方</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>運営</h2>
+        <ul>
+          <li><a href="../contact.html">お問い合わせ</a></li>
+          <li><a href="../privacypolicy.html">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">占いの結果は、日々の参考としてお楽しみください。健康・お金・法律などの大切な判断は、専門家にご相談ください。<br>カードの絵：1909年に出版されたパメラ・コールマン・スミスの絵（パブリックドメイン）。<br>Google Play は Google LLC の商標です。<br>© 2026 ひとやすみタロット</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
