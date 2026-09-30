@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#141A33">
+<title>プライバシーポリシー｜ひとやすみタロット</title>
+<meta name="description" content="Androidアプリ「ひとやすみタロット」のプライバシーポリシーです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #141A33;
+    --violet: #2A1F45;
+    --gold: #D4B26A;
+    --gold-soft: rgba(212, 178, 106, 0.35);
+    --text: #EDE6D6;
+    --muted: rgba(237, 230, 214, 0.72);
+    --panel: rgba(20, 26, 51, 0.55);
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--night); }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    background: linear-gradient(180deg, var(--night) 0%, var(--violet) 100%) fixed;
+    font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 17px;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  /* 星 */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(1.5px 1.5px at 12% 18%, rgba(237,230,214,.8), transparent),
+      radial-gradient(1px 1px at 28% 62%, rgba(237,230,214,.6), transparent),
+      radial-gradient(1.5px 1.5px at 46% 30%, rgba(212,178,106,.8), transparent),
+      radial-gradient(1px 1px at 64% 78%, rgba(237,230,214,.5), transparent),
+      radial-gradient(1.5px 1.5px at 82% 44%, rgba(237,230,214,.7), transparent),
+      radial-gradient(1px 1px at 90% 88%, rgba(212,178,106,.6), transparent),
+      radial-gradient(1px 1px at 8% 82%, rgba(237,230,214,.5), transparent),
+      radial-gradient(1px 1px at 55% 8%, rgba(237,230,214,.6), transparent);
+    animation: twinkle 6s ease-in-out infinite alternate;
+  }
+  @keyframes twinkle { from { opacity: .55; } to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { body::before { animation: none; } }
+
+  .wrap { position: relative; max-width: 720px; margin: 0 auto; padding: 56px 16px 72px; }
+
+  /* 月 */
+  .moon {
+    position: absolute; top: 28px; right: 16px;
+    width: 64px; height: 64px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #F6EFDC 0%, #E4D7B4 60%, #CDBB8E 100%);
+    box-shadow: 0 0 24px 6px rgba(237,230,214,.18), 0 0 60px 18px rgba(212,178,106,.10);
+  }
+
+  header { margin-bottom: 40px; }
+  .app, h1 { padding-right: 88px; }
+  .app { color: var(--gold); font-size: 14px; letter-spacing: .12em; margin: 0 0 8px; }
+  h1 {
+    font-family: "Shippori Mincho", serif; font-weight: 700;
+    font-size: 30px; line-height: 1.4; margin: 0 0 20px; letter-spacing: .04em;
+  }
+  .lead { margin: 0 0 10px; }
+  .lead.sub { color: var(--muted); font-size: 15px; }
+
+  section {
+    background: var(--panel);
+    border: 1px solid var(--gold-soft);
+    border-radius: 16px;
+    padding: 24px 22px;
+    margin: 0 0 18px;
+    box-shadow: 0 0 28px rgba(212,178,106,.06);
+  }
+  h2 {
+    display: flex; align-items: baseline; gap: 14px;
+    font-family: "Shippori Mincho", serif; font-weight: 700;
+    font-size: 20px; margin: 0 0 12px; line-height: 1.5;
+  }
+  h2 .num {
+    color: var(--gold); font-size: 15px; letter-spacing: .08em;
+    text-shadow: 0 0 10px rgba(212,178,106,.5);
+  }
+  p { margin: 0 0 12px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 12px; padding-left: 1.3em; }
+  li { margin: 4px 0; }
+  li::marker { color: var(--gold); }
+  .note { color: var(--muted); font-size: 15px; line-height: 1.8; }
+  a { color: var(--gold); text-underline-offset: 3px; word-break: break-all; }
+  a:hover { color: #E8CC8C; }
+  dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; }
+  dt { color: var(--gold); }
+  dd { margin: 0; }
+
+  footer {
+    margin-top: 32px; text-align: center;
+    color: var(--muted); font-size: 14px;
+  }
+  footer .star { color: var(--gold); letter-spacing: .5em; display: block; margin-bottom: 10px; }
+
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    .wrap { padding-top: 40px; }
+    .moon { width: 52px; height: 52px; top: 20px; }
+    .app, h1 { padding-right: 64px; }
+    h1 { font-size: 26px; }
+    section { padding: 20px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="moon" aria-hidden="true"></div>
+
+  <header>
+    <p class="app">ひとやすみタロット</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="lead">ひとやすみタロットは、安心して占いの時間を過ごしていただけるよう、情報の取り扱いをわかりやすくお知らせします。</p>
+    <p class="lead sub">本ポリシーは、Androidアプリ「ひとやすみタロット」（以下「本アプリ」）における情報の取り扱いについて定めるものです。</p>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span>取得する情報</h2>
+    <p>本アプリで利用者が入力・保存した次の情報は、利用者の端末内にのみ保存されます。運営者のサーバーへ送信されることはありません。</p>
+    <ul>
+      <li>ニックネーム、生年月日</li>
+      <li>占う相手として入力・保存したお名前</li>
+      <li>占いの履歴（選んだ相談内容、引いたカード、結果のまとめ）</li>
+      <li>設定（逆位置の有無、お知らせの回数・時間など）</li>
+      <li>本アプリを初めて開いた日・最後に開いた日（広告やお知らせの表示の判定に使います）</li>
+    </ul>
+    <p class="note">ニックネーム・生年月日・相手のお名前の入力は任意です。入力しなくてもすべての占いをご利用いただけます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>通信について</h2>
+    <p>本アプリがインターネット通信を行うのは、広告の表示と、広告に関する同意の確認のときのみです。</p>
+    <p>占いの内容、履歴、ニックネーム、生年月日、相手のお名前などを送信する機能はありません。占いの結果は端末の中で作られます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>広告について</h2>
+    <p>本アプリは、Google LLC の広告配信サービス「Google AdMob」を利用しています。広告は、本アプリを使い始めて8日目以降に、占い結果の最後のページに表示されます。</p>
+    <p>広告の配信にあたり、Google は広告ID、IPアドレス、端末やアプリに関する情報などを取得・利用する場合があります。これらは Google のポリシーに基づいて取り扱われます。</p>
+    <ul>
+      <li><a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a></li>
+      <li><a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+    </ul>
+    <p>欧州経済領域（EEA）など同意が必要な地域では、広告の表示前に同意の確認を行います。同意の内容は、マイページの「広告のプライバシー設定」からいつでも変更できます。</p>
+    <p class="note">パーソナライズ広告を望まない場合は、端末の設定（「Google」→「広告」など）から広告IDのリセット・削除ができます。表示名は端末により異なります。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>お知らせ（通知）について</h2>
+    <p>「今日のカード」のお知らせは、端末の中で予約して表示するもので、外部のサーバーは使用しません。回数と時間はマイページからいつでも変更・停止できます。</p>
+    <p class="note">Android 13 以降では、お知らせをオンにしたときにのみ通知の許可をお願いします。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>利用目的</h2>
+    <p>端末内に保存された情報は、占い結果の文章への反映（お名前での呼びかけ、数秘術の計算など）、履歴の表示、設定の保持のためにのみ使用されます。運営者がこれらの情報を閲覧・収集・販売することはありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>第三者提供</h2>
+    <p>法令に基づく場合を除き、運営者が利用者の情報を第三者へ提供することはありません。</p>
+    <p class="note">03 に記載した広告配信に伴う情報は、Google が広告SDKを通じて直接取得するものです。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>データの管理・削除</h2>
+    <ul>
+      <li>占いの履歴は、マイページの「履歴をすべて削除」、または履歴ごとの削除からいつでも消せます。</li>
+      <li>ニックネーム・生年月日・相手のお名前は、マイページからいつでも変更・削除できます。</li>
+      <li>本アプリをアンインストールすると、端末内のデータはすべて削除されます。</li>
+    </ul>
+    <p class="note">本アプリのデータはバックアップの対象外です。機種変更の際、データは新しい端末に引き継がれません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>ポリシーの変更</h2>
+    <p>法令の改正や機能の追加・変更に応じて、本ポリシーを改定することがあります。重要な変更がある場合は、本ページまたは本アプリ内でお知らせします。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>お問い合わせ</h2>
+    <dl>
+      <dt>運営者</dt><dd>船原滉樹</dd>
+      <dt>メール</dt><dd><a href="mailto:funahkonju@gmail.com">funahkonju@gmail.com</a></dd>
+    </dl>
+  </section>
+
+  <footer>
+    <span class="star" aria-hidden="true">✦ ✦ ✦</span>
+    制定日：2026年9月30日<br>
+    最終更新日：2026年9月30日
+  </footer>
+</div>
+</body>
+</html>
