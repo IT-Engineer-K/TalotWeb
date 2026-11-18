@@ -4,7 +4,7 @@ import json, html, os
 BASE_URL = "https://it-engineer-k.github.io/TalotWeb/"
 PLAY_URL = "https://play.google.com/store/apps/details?id=com.konju.talot"
 MAIL = "funahkonju@gmail.com"
-APP = "毎日タロットタロット"
+APP = "今日のタロットタロット"
 OUT = os.path.join(os.path.dirname(__file__), "..", "out")
 SRC = "/mnt/user-data/uploads/Talot/app/src/main/assets/text/ja/"
 
@@ -107,7 +107,7 @@ def page(path, title, desc, body, *, crumbs=None, jsonld=None, sticky=True, head
     <div class="cols">
       <div>
         <a class="logo" href="{r}index.html" style="font-size:18px"><img src="{r}images/icon.svg" alt="" width="34" height="34">{APP}</a>
-        <p class="small" style="margin-top:10px">がんばる毎日に、毎日タロットの一枚を。<br>Android 向けタロット占いアプリです。</p>
+        <p class="small" style="margin-top:10px">がんばる毎日に、今日のタロットの一枚を。<br>Android 向けタロット占いアプリです。</p>
       </div>
       <div>
         <h2>アプリについて</h2>
