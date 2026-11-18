@@ -125,7 +125,7 @@ def index():
   <div class="wrap">
     <div>
       <p class="eyebrow">タロット占いアプリ</p>
-      <h1>がんばる毎日に、<br><span class="gold">ひとやすみ</span>の一枚を。</h1>
+      <h1>がんばる毎日に、<br><span class="gold">毎日タロット</span>の一枚を。</h1>
       <p class="lead">質問に答えて、カードを引くだけ。<br>占い師と話しているような、やさしい言葉の流れで、今の気持ちを整理できます。</p>
       <div class="btn-row">{play_button(r)}<a class="btn btn-ghost" href="howto.html">使い方を見る</a></div>
       <p class="btn-note">Android 対応・会員登録なし・入力した情報は端末の中だけ</p>
@@ -253,7 +253,7 @@ def index():
     }
     page("index.html", None,
          "質問に答えてカードを引くだけ。占い師と話しているような流れで、仕事・人間関係・恋愛・お金・生活・今日の運勢を、やさしい言葉で占うタロットアプリです。会員登録なし。",
-         body, jsonld=[app_ld], full_title=f"{APP}｜がんばる毎日に、ひとやすみの一枚を。")
+         body, jsonld=[app_ld], full_title=f"{APP}｜がんばる毎日に、毎日タロットの一枚を。")
 
 def features():
     r = ""
@@ -310,7 +310,7 @@ def features():
     <div class="panel">
       <p>タロットは、未来を言い当てるためのものではなく、今の自分を見つめるための鏡だと考えています。</p>
       <p>カードの言葉は、あなたの背中をそっと押すことも、立ち止まって考えるきっかけになることもあります。どちらの場合も、最後に決めるのはあなた自身です。</p>
-      <p style="margin:0">忙しい毎日の中で、ほんの数分、自分のための時間を。{APP}が、そんな「ひとやすみ」の相棒になれたらうれしいです。</p>
+      <p style="margin:0">忙しい毎日の中で、ほんの数分、自分のための時間を。{APP}が、そんな「毎日タロット」の相棒になれたらうれしいです。</p>
     </div>
   </div>
 </section>
